@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="botonEntrar" maxHeight="433.0" maxWidth="531.0" prefHeight="433.0" prefWidth="531.0" style="-fx-background-color: #d02a2a;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.baseDeDatosController">
+   <children>
+      <Label layoutX="49.0" layoutY="30.0" prefHeight="53.0" prefWidth="435.0" text="Creación de base de Datos" textAlignment="CENTER" textFill="#ebded8">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="294.0" layoutY="162.0" />
+      <JFXButton fx:id="salir" layoutX="329.0" layoutY="348.0" onMouseClicked="#salirOCrear" prefHeight="44.0" prefWidth="124.0" style="-fx-background-color: #FFFFFF;" text="Salir">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="crear" layoutX="64.0" layoutY="348.0" onMouseClicked="#salirOCrear" prefHeight="44.0" prefWidth="124.0" style="-fx-background-color: #FFFFFF;" text="Crear">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="64.0" layoutY="154.0" prefHeight="53.0" prefWidth="180.0" text="Nombre de la Base de Datos:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField id="Usuario" fx:id="Usuario" layoutX="324.0" layoutY="168.0" unFocusColor="#ebd7d7" />
+   </children>
+</AnchorPane>

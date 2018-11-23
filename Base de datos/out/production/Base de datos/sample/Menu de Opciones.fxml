@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.menuController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane id="botonEntrar" maxHeight="433.0" maxWidth="531.0" prefHeight="433.0" prefWidth="531.0" style="-fx-background-color: #d02a2a;">
+         <children>
+            <Label layoutX="110.0" layoutY="28.0" prefHeight="53.0" prefWidth="349.0" text="Menu de Opciones" textAlignment="CENTER" textFill="#ebd7d7">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="crearUsuario" layoutX="72.0" layoutY="119.0" onMouseClicked="#abrirVentana" prefHeight="74.0" prefWidth="156.0" style="-fx-background-color: #2251ee;" text="Crear Usuario Nuevo" textFill="WHITE" />
+            <JFXButton fx:id="eliminarUsuario" layoutX="303.0" layoutY="119.0" onMouseClicked="#abrirVentana" prefHeight="74.0" prefWidth="156.0" style="-fx-background-color: #2251ee;" text="Eliminar un Usuario" textFill="WHITE" />
+            <JFXButton fx:id="baseDeDatos" layoutX="68.0" layoutY="243.0" onMouseClicked="#abrirVentana" prefHeight="95.0" prefWidth="395.0" style="-fx-background-color: #0fab03;" text="Mantenimiento de Datos" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="salir" layoutX="212.0" layoutY="367.0" onMouseClicked="#abrirVentana" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: #ffffff;" text="Salir" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

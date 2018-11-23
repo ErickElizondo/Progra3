@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="botonEntrar" maxHeight="433.0" maxWidth="531.0" prefHeight="433.0" prefWidth="531.0" style="-fx-background-color: #d02a2a;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.agregarUsuarioController">
+   <children>
+      <Label layoutX="61.0" layoutY="130.0" prefHeight="36.0" prefWidth="117.0" text="Usuario" textAlignment="CENTER" textFill="#ebd7d7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="217.0" prefHeight="36.0" prefWidth="117.0" text="Contraseña" textFill="#ebd7d7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="28.0" prefHeight="53.0" prefWidth="349.0" text="Crear usuario nuevo" textAlignment="CENTER" textFill="#ebd7d7">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="266.0" layoutY="136.0" unFocusColor="#ebd7d7" />
+      <JFXTextField layoutX="266.0" layoutY="223.0" unFocusColor="#ebd7d7" />
+      <JFXButton fx:id="crear" layoutX="104.0" layoutY="334.0" onMouseClicked="#devolver" prefHeight="59.0" prefWidth="111.0" style="-fx-background-color: #e4dfdf;" text="Crear" />
+      <JFXButton fx:id="salir" layoutX="301.0" layoutY="334.0" onMouseClicked="#devolver" prefHeight="59.0" prefWidth="111.0" style="-fx-background-color: #e4dfdf;" text="Salir" />
+   </children>
+</AnchorPane>
