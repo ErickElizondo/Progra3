@@ -38,17 +38,17 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <SplitMenuButton layoutX="116.0" layoutY="110.0" mnemonicParsing="false" text="Tipo de tabla">
-         <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-         </items>
-      </SplitMenuButton>
       <Label layoutX="59.0" layoutY="250.0" prefHeight="32.0" prefWidth="135.0" text="Datos a ingresar:" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <JFXTextField layoutX="59.0" layoutY="282.0" prefHeight="32.0" prefWidth="425.0" />
+      <SplitMenuButton layoutX="116.0" layoutY="110.0" mnemonicParsing="false" text="Tipo de tabla">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </SplitMenuButton>
    </children>
 </AnchorPane>

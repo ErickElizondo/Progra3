@@ -32,6 +32,8 @@ public class registroArchivoController {
     @FXML
     private JFXTextField Usuario;
 
+
+
     @FXML
     void insertarOSalir(MouseEvent event) {
         JFXButton b=(JFXButton)event.getSource();

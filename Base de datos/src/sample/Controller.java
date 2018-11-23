@@ -45,4 +45,18 @@ public class Controller {
         }
     }
 
+    void crearVentana(String nombreArchivo, String Titulo){
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(nombreArchivo));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage=new Stage();
+            stage.setTitle(Titulo);
+            stage.setScene(new Scene(root1));
+            stage.show();
+
+        }catch (Exception e){
+            System.out.println("No se pudo cargar otra ventana");
+        }
+    }
+
 }

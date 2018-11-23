@@ -28,6 +28,9 @@ public class registrosController {
     private JFXButton archivo;
 
     @FXML
+    private  JFXButton borrar;
+
+    @FXML
     void elegir(MouseEvent event) {
         JFXButton b=(JFXButton)event.getSource();
         if(b==manualmente){
@@ -58,7 +61,17 @@ public class registrosController {
                 System.out.println("No se pudo cargar otra ventana");
             }
 
-        }else{
+        }else if(b==borrar) {
+            try {
+                ((Node)event.getSource()).getScene().getWindow().hide();
+                Controller ventana=new Controller();
+                ventana.crearVentana("eliminarRegistro.fxml","Eliminar Registro");
+
+            }catch (Exception e){
+                System.out.println("No se pudo cargar otra ventana");
+            }
+        }
+        else{
             Controller salir=new Controller();
             salir.abrirVentana(event);
         }

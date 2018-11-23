@@ -39,7 +39,18 @@ public class opcionesController {
     void hacerFuncion(MouseEvent event) {
         JFXButton b=(JFXButton)event.getSource();
         if(b==tablas){
+            try {
+                ((Node)event.getSource()).getScene().getWindow().hide();
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("opcionesTablas.fxml"));
+                Parent root1 = (Parent) fxmlLoader.load();
+                Stage stage=new Stage();
+                stage.setTitle("Tablas");
+                stage.setScene(new Scene(root1));
+                stage.show();
 
+            }catch (Exception e){
+                System.out.println("No se pudo cargar otra ventana");
+            }
         }else if(b==baseDatos){
             try {
                 ((Node)event.getSource()).getScene().getWindow().hide();
