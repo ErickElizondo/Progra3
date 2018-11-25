@@ -24,7 +24,7 @@ import javafx.scene.input.MouseEvent;
 
 
 public class eliminarUsuarioController {
-    private String usuario;
+    private String usuario="";
     @FXML
     private MenuButton usuarios;
 
@@ -47,40 +47,49 @@ public class eliminarUsuarioController {
             salir.crearVentana("Menu de Opciones.fxml","Menu ");
         }
         else{
-            try{
-                Scanner fileScan = new Scanner(new File("D:\\Java\\Base de datos\\src\\sample\\1.txt"));
-                Writer output;
-                output = new BufferedWriter(new FileWriter("D:\\Java\\Base de datos\\src\\sample\\salida.txt", true));
-                boolean found = false; // added this variable
-                int i=0;
-                while (fileScan.hasNextLine()) {
-                    String input = fileScan.nextLine();
-                    System.out.println(input);
-                    String Username = input.substring(0, input.indexOf(','));
-                    if(Username.equals(usuario)) continue;
-                    if(i!=0) ((BufferedWriter) output).newLine();
-                    output.append(input);
-                    i++;
-                }
-                output.close();
-                fileScan.close();
-                Files.delete(Paths.get("D:\\Java\\Base de datos\\src\\sample\\1.txt"));
-                new File("D:\\Java\\Base de datos\\src\\sample\\salida.txt").renameTo(new File("D:\\Java\\Base de datos\\src\\sample\\1.txt"));
+            if(usuario!="") {
+                try {
+                    Scanner fileScan = new Scanner(new File("D:\\Java\\Base de datos\\src\\sample\\1.txt"));
+                    Writer output;
+                    output = new BufferedWriter(new FileWriter("D:\\Java\\Base de datos\\src\\sample\\salida.txt", true));
+                    boolean found = false; // added this variable
+                    int i = 0;
+                    while (fileScan.hasNextLine()) {
+                        String input = fileScan.nextLine();
+                        System.out.println(input);
+                        String Username = input.substring(0, input.indexOf(','));
+                        if (Username.equals(usuario)) continue;
+                        if (i != 0) ((BufferedWriter) output).newLine();
+                        output.append(input);
+                        i++;
+                    }
+                    output.close();
+                    fileScan.close();
+                    Files.delete(Paths.get("D:\\Java\\Base de datos\\src\\sample\\1.txt"));
+                    new File("D:\\Java\\Base de datos\\src\\sample\\salida.txt").renameTo(new File("D:\\Java\\Base de datos\\src\\sample\\1.txt"));
+                    //Eliminar Usuario
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Eliminar Usuario");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Se ha eliminado un usuario exitosamente!!");
+
+                    alert.showAndWait();
 
 //                File file = new File("D:\\Java\\Base de datos\\src\\sample\\salida.txt");
 //                file.renameTo(borrar);
-            }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
+            }else{
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Eliminar Usuario");
+                alert.setHeaderText(null);
+                alert.setContentText("Escoja a un usuario, por favor.");
+
+                alert.showAndWait();
+            }
 
 
-            //Eliminar Usuario
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Eliminar Usuario");
-            alert.setHeaderText(null);
-            alert.setContentText("Se ha eliminado un usuario exitosamente!!");
-
-            alert.showAndWait();
 
         }
     }
