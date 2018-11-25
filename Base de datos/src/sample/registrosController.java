@@ -72,8 +72,9 @@ public class registrosController {
             }
         }
         else{
-            Controller salir=new Controller();
-            salir.abrirVentana(event);
+            ((Node) event.getSource()).getScene().getWindow().hide();
+            Controller ventana=new Controller();
+            ventana.crearVentana("Menu de Opciones.fxml", "Opciones");
         }
     }
 

@@ -5,6 +5,7 @@ import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
 
@@ -36,8 +37,9 @@ public class baseDeDatosController {
             alert.showAndWait();
             //Crear Base de Datos
         }else{
+            ((Node) event.getSource()).getScene().getWindow().hide();
             Controller salir=new Controller();
-            salir.abrirVentana(event);
+            salir.crearVentana("Menu de Opciones.fxml","Menu de opciones");
         }
     }
 }

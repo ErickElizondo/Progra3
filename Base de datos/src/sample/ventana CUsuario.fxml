@@ -23,8 +23,8 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <JFXTextField layoutX="266.0" layoutY="136.0" unFocusColor="#ebd7d7" />
-      <JFXTextField layoutX="266.0" layoutY="223.0" unFocusColor="#ebd7d7" />
+      <JFXTextField fx:id="usuario" layoutX="266.0" layoutY="136.0" unFocusColor="#ebd7d7" />
+      <JFXTextField fx:id="contraseña" layoutX="266.0" layoutY="223.0" unFocusColor="#ebd7d7" />
       <JFXButton fx:id="crear" layoutX="104.0" layoutY="334.0" onMouseClicked="#devolver" prefHeight="59.0" prefWidth="111.0" style="-fx-background-color: #e4dfdf;" text="Crear" />
       <JFXButton fx:id="salir" layoutX="301.0" layoutY="334.0" onMouseClicked="#devolver" prefHeight="59.0" prefWidth="111.0" style="-fx-background-color: #e4dfdf;" text="Salir" />
    </children>

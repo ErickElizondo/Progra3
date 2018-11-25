@@ -1,0 +1,4 @@
+administrador,123Adm$
+asd,asd
+asd,asd2
+hola1234,perro12!

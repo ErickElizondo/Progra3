@@ -10,6 +10,9 @@ import org.w3c.dom.events.Event;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
+import java.io.File;
+import java.util.Scanner;
+import java.io.FileNotFoundException;
 
 public class Main extends Application {
 
@@ -20,7 +23,7 @@ public class Main extends Application {
 
 
     public void main() {
-//        launch(args);
+
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("sample.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
