@@ -11,10 +11,13 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 
 public class Main extends Application {
+
+    public static ArrayList<BaseDeDatos> listaDeBasesDeDatos = new ArrayList<>();
 
     @Override
     public void start(Stage primaryStage) throws Exception{

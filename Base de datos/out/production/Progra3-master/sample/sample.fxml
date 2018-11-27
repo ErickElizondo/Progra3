@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane id="botonEntrar" maxHeight="433.0" maxWidth="531.0" prefHeight="433.0" prefWidth="531.0" style="-fx-background-color: #d02a2a;">
+         <children>
+            <Label layoutX="61.0" layoutY="130.0" prefHeight="36.0" prefWidth="117.0" text="Usuario" textAlignment="CENTER" textFill="#ebd7d7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="217.0" prefHeight="36.0" prefWidth="117.0" text="Contraseña" textFill="#ebd7d7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="28.0" prefHeight="49.0" prefWidth="293.0" text="Base de Datos" textAlignment="CENTER" textFill="#ebd7d7">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <JFXTextField id="Usuario" fx:id="Usuario" layoutX="266.0" layoutY="136.0" unFocusColor="#ebd7d7" />
+            <JFXPasswordField id="Contraseña" fx:id="Contraseña" layoutX="266.0" layoutY="223.0" unFocusColor="#ebd7d7" />
+            <JFXButton layoutX="218.0" layoutY="313.0" onMouseClicked="#abrirVentana" prefHeight="53.0" prefWidth="95.0" style="-fx-background-color: #ffffff;" text="Entrar" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

@@ -76,7 +76,7 @@ public class Controller {
         try {
 
 //        launch(args);
-            Scanner fileScan = new Scanner(new File("D:\\Java\\Base de datos\\src\\sample\\1.txt"));
+            Scanner fileScan = new Scanner(new File("D:\\DocsHDD\\Progra3-master\\Base de datos\\src\\sample\\1.txt"));
             boolean found = false; // added this variable
             while (fileScan.hasNextLine()) {
                 String input = fileScan.nextLine();

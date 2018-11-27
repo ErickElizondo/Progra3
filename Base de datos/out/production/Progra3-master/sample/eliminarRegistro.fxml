@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="botonEntrar" maxHeight="579.0" maxWidth="531.0" prefHeight="579.0" prefWidth="531.0" style="-fx-background-color: #d02a2a;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.eliminarRegistroController">
+   <children>
+      <Label layoutX="120.0" layoutY="25.0" prefHeight="53.0" prefWidth="292.0" text="Eliminar Registros" textAlignment="CENTER" textFill="#ebded8">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="294.0" layoutY="162.0" />
+      <JFXButton fx:id="limpiar" layoutX="319.0" layoutY="344.0" onMouseClicked="#eliminarRegistro" prefHeight="20.0" prefWidth="93.0" style="-fx-background-color: #FFFFFF;" text="Limpiar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="53.0" layoutY="95.0" text="Tabla:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <SplitMenuButton layoutX="114.0" layoutY="93.0" mnemonicParsing="false" text="Tabla">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </SplitMenuButton>
+      <JFXButton fx:id="eliminar" layoutX="107.0" layoutY="344.0" onMouseClicked="#eliminarRegistro" prefHeight="20.0" prefWidth="105.0" style="-fx-background-color: #FFFFFF;" text="Eliminar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="56.0" layoutY="127.0" text="Estructura de la Tabla:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="152.0" text="*estructura" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="192.0" text="Campos a seleccionar:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="96.0" layoutY="223.0" prefHeight="32.0" prefWidth="396.0" />
+      <Label layoutX="59.0" layoutY="280.0" text="Condición:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="266.0" layoutY="303.0" prefHeight="25.0" prefWidth="217.0" />
+      <SplitMenuButton layoutX="67.0" layoutY="303.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="Dirección">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </SplitMenuButton>
+      <SplitMenuButton layoutX="184.0" layoutY="303.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="==">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </SplitMenuButton>
+      <ScrollPane layoutX="67.0" layoutY="397.0" prefHeight="131.0" prefWidth="380.0" />
+      <JFXButton fx:id="salir" layoutX="202.0" layoutY="533.0" onMouseClicked="#eliminarRegistro" prefHeight="32.0" prefWidth="93.0" style="-fx-background-color: #FFFFFF;" text="Cancelar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="67.0" layoutY="374.0" text="Cantidad eliminada:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

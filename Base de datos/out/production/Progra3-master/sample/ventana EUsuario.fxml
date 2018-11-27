@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="botonEntrar" maxHeight="433.0" maxWidth="531.0" prefHeight="433.0" prefWidth="531.0" style="-fx-background-color: #d02a2a;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.eliminarUsuarioController">
+   <children>
+      <Label layoutX="94.0" layoutY="100.0" prefHeight="36.0" prefWidth="251.0" text="Seleccione a un usuario a eliminar:" textAlignment="CENTER" textFill="#ebd7d7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="187.0" prefHeight="36.0" prefWidth="128.0" text="Usuarios Válidos:" textFill="#ebd7d7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="28.0" prefHeight="53.0" prefWidth="349.0" text="Eliminar un usuario" textAlignment="CENTER" textFill="#ebd7d7">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="294.0" layoutY="162.0" />
+      <JFXButton fx:id="eliminar" layoutX="93.0" layoutY="333.0" onMouseClicked="#devolverVentana" prefHeight="59.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Eliminar" />
+      <JFXButton fx:id="salir" layoutX="290.0" layoutY="333.0" onMouseClicked="#devolverVentana" prefHeight="59.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Salir" />
+      <MenuButton fx:id="usuarios" layoutX="255.0" layoutY="193.0" mnemonicParsing="false" onAction="#cambio" onMouseClicked="#haceralgo" text="Usuarios">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

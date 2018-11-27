@@ -30,12 +30,31 @@ public class baseDeDatosController {
     void salirOCrear(MouseEvent event) {
         JFXButton b=(JFXButton)event.getSource();
         if(b==crear){
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Crear Base de Datos");
-            alert.setHeaderText(null);
-            alert.setContentText("Se ha creado una base de Datos!!");
-            alert.showAndWait();
-            //Crear Base de Datos
+            //CREACION DE BASE DE DATOS
+            String nombreTMP = Usuario.getText();
+            boolean yaExiste = false;
+            for(BaseDeDatos bsdt : Main.listaDeBasesDeDatos){
+                if(nombreTMP.equals(bsdt.getNombre())){
+                    yaExiste = true;
+                    break;
+                }
+            }
+            if(!yaExiste){
+                BaseDeDatos baseACrear = new BaseDeDatos(nombreTMP);
+                Main.listaDeBasesDeDatos.add(baseACrear);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Crear Base de Datos");
+                alert.setHeaderText(null);
+                alert.setContentText("Se ha creado una base de Datos!!");
+                alert.showAndWait();
+            }else{
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Crear Base de Datos");
+                alert.setHeaderText(null);
+                alert.setContentText("Esa base de datos ya existe");
+                alert.showAndWait();
+            }
+
         }else{
             ((Node) event.getSource()).getScene().getWindow().hide();
             Controller salir=new Controller();

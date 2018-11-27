@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="botonEntrar" maxHeight="433.0" maxWidth="531.0" prefHeight="320.0" prefWidth="415.0" style="-fx-background-color: #d02a2a;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.eliminarTablaController">
+   <children>
+      <Label layoutX="96.0" layoutY="28.0" prefHeight="53.0" prefWidth="227.0" text="Eliminar Tabla" textAlignment="CENTER" textFill="#ebded8">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Accordion layoutX="294.0" layoutY="162.0" />
+      <JFXButton fx:id="eliminar" layoutX="61.0" layoutY="245.0" onMouseClicked="#eliminarTabla" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #FFFFFF;" text="Eliminar" />
+      <JFXButton fx:id="salir" layoutX="266.0" layoutY="245.0" onMouseClicked="#eliminarTabla" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #FFFFFF;" text="Salir" />
+      <Label layoutX="54.0" layoutY="150.0" text="Seleccione la Tabla a eliminar:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <SplitMenuButton layoutX="268.0" layoutY="148.0" mnemonicParsing="false" text="Tabla">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </SplitMenuButton>
+   </children>
+</AnchorPane>
